@@ -6,7 +6,9 @@ const cloudConnection = require("./db-connection/connection");
 const app = express();
 
 app.use(cors());
+
 app.use(express.json());
+// from json() to string()
 
 
   cloudConnection()
